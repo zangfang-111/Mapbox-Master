@@ -1,0 +1,17 @@
+button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: $background-1;
+  border: 1px solid $text-2;
+  color: $text-1;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: $background-2;
+    border: 1px solid $text-1;
+  }
+}
