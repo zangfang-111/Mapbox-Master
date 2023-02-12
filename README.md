@@ -1,7 +1,7 @@
 # TECHNICAL TEST
 
 ## What has been completed?
-- ### [Implemented all required functionalities](https://github.com/zangfang-111/Ishak-Technical-Challenge#requirement)
+- ### [Implemented all required functionalities](https://github.com/zangfang-111/Ishak-Technical-Challenge/blob/main/REQUIREMENT.md)
     - Upload GeoJSON and display the plot on the map
     - Draw a building in the center of the plot
     - Coverage, floor height, floor number handle
