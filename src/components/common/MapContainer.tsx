@@ -3,6 +3,12 @@ import mapboxgl from 'mapbox-gl';
 import * as turf from '@turf/turf';
 import { GeometryType } from '../home/utils';
 
+// eslint-disable-next-line
+// @ts-ignore
+mapboxgl.workerClass =
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 // set mapbox accessToken
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN || '';
 

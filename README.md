@@ -28,7 +28,7 @@
 - Notification use case to user friendly
 - Lint config and auto link fix use case
 - Git commit naming case
-- Git PR and description define case
+- [Git PR and description define case](https://github.com/zangfang-111/Ishak-Technical-Challenge/pull/1)
 - React code-splitting feature for performance
 - Comment with a tag like "//TODO": if it is a todo thing
 
