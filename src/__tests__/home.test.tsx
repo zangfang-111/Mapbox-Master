@@ -1,20 +1,43 @@
-// import React from 'react';
-// import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { render, screen, cleanup, waitFor } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
+import { MemoryRouter } from 'react-router-dom';
+import mapboxgl from 'mapbox-gl';
+import Home from 'components/home';
 
-// import Dashboard from '../components/dashboard';
+jest.mock('mapbox-gl', () => ({
+  Map: jest.fn(),
+}));
 
-// describe('renders landing page', () => {
-//   it('should render the description', () => {
-//     render(<Dashboard />);
-//     const element = screen.getByText('Dashboard');
+// @ts-ignore
+mapboxgl.Map.prototype = {
+  remove: jest.fn(),
+  on: jest.fn(),
+  off: jest.fn(),
+};
 
-//     expect(element).toBeInTheDocument();
-//   });
+beforeEach(() => {
+  jest.useFakeTimers();
+  cleanup();
+});
 
-//   it('should renders the create event button', async () => {
-//     render(<Dashboard />);
+afterEach(() => {
+  jest.useRealTimers();
+});
 
-//     const element = screen.getByTestId('dashboard');
-//     expect(element).toBeInTheDocument();
-//   });
-// });
+describe('test home page', () => {
+  it('should render page without crash', async () => {
+    act(() => jest.advanceTimersByTime(1000));
+    render(
+      <MemoryRouter>
+        <Home />
+      </MemoryRouter>
+    );
+
+    const field = await waitFor(() => screen.getByTestId('map-container'));
+    expect(field).toBeInTheDocument();
+  });
+
+  // TODO:
+  // other all functionalities test here
+});

@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import { RouterProvider } from 'react-router-dom';
 
 import './styles/index.scss';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 import store from './services';
 import reportWebVitals from './utils/reportWebVitals';
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <ToastContainer
-      position="top-right"
+      position="top-center"
       autoClose={5000}
       hideProgressBar={false}
       newestOnTop={false}
