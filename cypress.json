@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "testFiles": "**/*.e2e.js",
+  "componentFolder": "cypress",
+  "viewportWidth": 1280,
+  "viewportHeight": 970,
+  "videoUploadOnPasses": false,
+  "video": false,
+  "retries": 2
+}

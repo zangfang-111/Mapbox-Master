@@ -1,0 +1,80 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+@import './variables/colors';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  padding: 100px 0 0 300px;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.map-container {
+  height: 100vh;
+}
+   
+.control-panel {
+  width: 20%;
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 40px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+}
+
+.statistiques {
+  width: 20%;
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 40px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+  border-radius: 4px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin: 16px 0;
+  }
+}
