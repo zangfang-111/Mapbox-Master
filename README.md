@@ -1,4 +1,4 @@
-# TECHNICAL TEST
+# MAPBOX MASTER
 
 ## What has been completed?
 - ### [Implemented all required functionalities](https://github.com/zangfang-111/Ishak-Technical-Challenge/blob/main/REQUIREMENT.md)
